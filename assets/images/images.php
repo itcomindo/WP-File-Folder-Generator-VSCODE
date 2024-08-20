@@ -2,7 +2,7 @@
 
 /**
  *
- * Single
+ * Images
  * @package ganti-package
  */
 

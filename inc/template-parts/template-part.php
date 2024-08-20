@@ -2,7 +2,7 @@
 
 /**
  *
- * Single
+ * Template-part
  * @package ganti-package
  */
 

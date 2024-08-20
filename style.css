@@ -1,10 +1,133 @@
 /**
 =========================
 * Theme Name: 	JKC
-* Theme URI: 	https://jkc.co.id/
-* Description: 	JKC Theme
+* Description: 	JKC theme
 * Author: 		Budi Haryono
 * Author URI: 	https://budiharyono.id/
 * Version: 		1.0.0
 *=========================
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --font-primary: "Roboto", sans-serif;
+  --font-display: "Roboto", sans-serif;
+  --color-background: #cfcbc8;
+  --color-text: #111111;
+  --color-light-1: #f5f5f5;
+  --color-light-2: #eeeeee;
+  --color-light-3: rgb(233, 229, 229);
+  --color-dark-1: #333333;
+  --color-dark-2: #222222;
+  --color-dark-3: #111111;
+  --color-dark-4: #000000;
+  --colac1: #576319;
+  --colac2: #0ba5be;
+  --colac3: #00718f;
+  --colac4-light: #16778f;
+  --colac4: #013f4e;
+  --colac5: #aa1803;
+  --transparent-light-1: rgba(255, 255, 255, 0.1);
+  --transparent-light-2: rgba(255, 255, 255, 0.2);
+  --transparent-light-3: rgba(255, 255, 255, 0.3);
+  --transparent-light-4: rgba(255, 255, 255, 0.4);
+  --transparent-light-5: rgba(255, 255, 255, 0.5);
+  --transparent-light-6: rgba(255, 255, 255, 0.6);
+  --transparent-light-7: rgba(255, 255, 255, 0.7);
+  --transparent-light-8: rgba(255, 255, 255, 0.8);
+  --transparent-light-9: rgba(255, 255, 255, 0.9);
+  --transparent-dark-1: rgba(0, 0, 0, 0.1);
+  --transparent-dark-2: rgba(0, 0, 0, 0.2);
+  --transparent-dark-3: rgba(0, 0, 0, 0.3);
+  --transparent-dark-4: rgba(0, 0, 0, 0.4);
+  --transparent-dark-5: rgba(0, 0, 0, 0.5);
+  --transparent-dark-6: rgba(0, 0, 0, 0.6);
+  --transparent-dark-7: rgba(0, 0, 0, 0.7);
+  --transparent-dark-8: rgba(0, 0, 0, 0.8);
+  --transparent-dark-9: rgba(0, 0, 0, 0.9);
+  --font-clamp-1: clamp(0.94rem, 0.11vw + 0.91rem, 1rem);
+  --font-clamp-2: clamp(1.17rem, 0.29vw + 1.1rem, 1.33rem);
+  --font-clamp-3: clamp(1.46rem, 0.57vw + 1.32rem, 1.78rem);
+  --font-clamp-4: clamp(1.83rem, 0.98vw + 1.59rem, 2.37rem);
+  --font-clamp-5: clamp(2.29rem, 1.58vw + 1.89rem, 3.16rem);
+  --font-clamp-6: clamp(2.86rem, 2.45vw + 2.25rem, 4.21rem);
+  --font-clamp-7: clamp(3.58rem, 3.7vw + 2.65rem, 5.61rem);
+  --font-clamp-8: clamp(4.47rem, 5.47vw + 3.1rem, 7.48rem);
+  --font-clamp-9: clamp(5.59rem, 7.97vw + 3.6rem, 9.97rem);
+  --font-clamp-10: clamp(6.98rem, 11.46vw + 4.12rem, 13.29rem);
+  --font-clamp-11: clamp(8.73rem, 16.33vw + 4.65rem, 17.71rem);
+  --font-clamp-12: clamp(10.91rem, 23.09vw + 5.14rem, 23.61rem);
+  --font-clamp-13: clamp(13.64rem, 32.42vw + 5.54rem, 31.47rem);
+  --font-clamp-14: clamp(17.05rem, 45.28vw + 5.73rem, 41.96rem);
+  --font-clamp-15: clamp(21.32rem, 62.93vw + 5.58rem, 55.93rem);
+  --border-radius-3: 3px;
+  --border-radius-5: 5px;
+  --border-radius-7: 7px;
+  --border-radius-10: 10px;
+  --border-radius-13: 13px;
+  --border-radius-25: 25px;
+  --box-shadow-1: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --box-shadow-2: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --box-shadow-3: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --box-shadow-4: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --box-shadow-5: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --box-shadow-6: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --box-shadow-none: 0 0 #0000;
+}
+
+/**
+=========================
+* MM CSS
+* @todo MM CSS
+*=========================
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--colac5);
+  border-radius: 5px;
+}
+
+body {
+  background: var(--color-light-1);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+a.check-index {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  background-color: black;
+  color: white;
+  line-height: 1;
+  padding: 4px 6px;
+  font-size: 12px;
+}
+
+aside.the-sidebar {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
