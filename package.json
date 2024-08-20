@@ -2,7 +2,7 @@
   "name": "masmon-wordpress-theme-folders-and-files-generator",
   "displayName": "Masmon WordPress Theme Folders and Files Generator",
   "description": "Generate folders and files structure for a WordPress theme",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "publisher": "budiharyono",
   "engines": {
     "vscode": "^1.50.0"

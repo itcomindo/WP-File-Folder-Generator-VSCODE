@@ -24,14 +24,29 @@ function activate(context) {
 
         // Struktur file
         const files = [
+            // Assets Folder.
+            'assets/index.php',
+            'assets/assets.php',
             'assets/css/index.php',
             'assets/images/index.php',
+            'assets/images/images.php',
             'assets/js/index.php',
             'assets/libs/index.php',
+            // Inc Folder.
+            'inc/index.php',
+            'inc/inc.php',
+            // Inc Components Folder.
             'inc/components/index.php',
+            'inc/components/components.php',
+            // Inc Fields Folder.
             'inc/fields/index.php',
+            'inc/fields/fields.php',
+            // Inc Sections Folder.
             'inc/sections/index.php',
+            'inc/sections/sections.php',
+            // Inc Template Parts Folder.
             'inc/template-parts/index.php',
+            'inc/template-parts/template-part.php',
             '404.php',
             'author.php',
             'category.php',
@@ -73,7 +88,7 @@ function activate(context) {
                 if (file.endsWith('index.php')) {
                     content = `<?php\n\n/**\n *\n * Silence is golden\n * @package gant-package\n */\n\ndefined('ABSPATH') || die('No script kiddies please!');\n`;
                 } else if (file.endsWith('.php')) {
-                    if (fileName === 'functions') {
+                    if (fileName === 'functions' || fileName === 'header' || fileName === 'footer' || fileName === 'assets' || fileName === 'inc' || fileName === 'sections' || fileName === 'fields' || fileName === 'components' || fileName === 'template-parts') {
                         content = `<?php\n\n/**\n *\n * Functions\n * @package ganti-package\n */\n\ndefined('ABSPATH') || die('No script kiddies please!');\n`;
                     } else {
                         const capitalizedFileName = fileName.charAt(0).toUpperCase() + fileName.slice(1);
